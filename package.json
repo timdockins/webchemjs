@@ -1,0 +1,23 @@
+{
+  "name": "webchemjs",
+  "version": "1.0.0",
+  "description": "A JavaScript port of the webchem package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timdockins/webchemjs.git"
+  },
+  "keywords": [
+    "chemistry",
+    "databases"
+  ],
+  "author": "timdockins@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timdockins/webchemjs/issues"
+  },
+  "homepage": "https://github.com/timdockins/webchemjs#readme"
+}
