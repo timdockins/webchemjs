@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/timdockins/webchemjs/issues"
   },
-  "homepage": "https://github.com/timdockins/webchemjs#readme"
+  "homepage": "https://github.com/timdockins/webchemjs#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
 }

@@ -101,7 +101,7 @@ function processPubChemResultsToInChIKey(err, results) {
             compounds : compounds,
             representation : "sdf",
             first : false,
-            verbose : false
+            verbose : true
         },
         recordResults
     )
