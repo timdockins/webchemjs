@@ -22,5 +22,9 @@
   "homepage": "https://github.com/timdockins/webchemjs#readme",
   "devDependencies": {
     "chai": "^3.5.0"
+  },
+  "dependencies": {
+    "q": "^1.4.1",
+    "xml2js": "^0.4.17"
   }
 }
