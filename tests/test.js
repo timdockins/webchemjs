@@ -1,9 +1,9 @@
 "use strict";
 
 //const WebChemJS = require("./index");
-const CIR = require('./index').CIR;
+const CIR = require('./../index').CIR;
 //const ChemID = require('./index').ChemID;
-const PubChem = require('./index').PubChem;
+const PubChem = require('./../index').PubChem;
 
 const util = require("util");
 const parseString = require('xml2js').parseString;
