@@ -7,6 +7,7 @@ You can currently query the following:
 - [PubChem](https://www.ncbi.nlm.nih.gov/pccompound/)
 - [CIR: Chemical Identifier Resolver](https://cactus.nci.nih.gov/chemical/structure)
 - [TOXLINE](https://toxnet.nlm.nih.gov/newtoxnet/toxline.htm) 
+- [RxNav](https://rxnav.nlm.nih.gov/index.html)
 
 (others coming soon)
 
