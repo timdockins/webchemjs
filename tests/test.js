@@ -4,6 +4,7 @@
 const CIR = require('./../index').CIR;
 //const ChemID = require('./index').ChemID;
 const PubChem = require('./../index').PubChem;
+const Q = require("q");
 
 const util = require("util");
 const parseString = require('xml2js').parseString;
@@ -41,8 +42,14 @@ PubChem.query(
         query : ids,
         first : false,
         verbose : false
-    },
-    processPubChemResultsToInChIKey
+    }
+).then(
+    processPubChemResultsToInChIKey,
+    function(err) {
+        console.log("There was an error retrieving the results");
+        console.error(err);
+        process.exit(1);
+    }
 );
 
 
@@ -78,12 +85,8 @@ function processChemIDResult(err, results) {
 }
 
 
-function processPubChemResultsToInChIKey(err, results) {
-    if (err) {
-        console.log("There was an error retreiving the results");
-        console.error(err);
-        process.exit();
-    }
+function processPubChemResultsToInChIKey( results) {
+
     console.log(util.inspect(results,false,null));
 
     var compounds = results.map( function( result ) {
