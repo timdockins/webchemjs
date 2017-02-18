@@ -30,18 +30,3 @@ ToxNet.initialPost( {
     );
 
 
-function constructHomeBaseCompoundRecord( identifierType, identifier, source, docno ) {
-    var newCompound = {
-        recordType   : "compound",
-        identifiers  : {},
-        documentation: [
-            {
-                source          : source,
-                recordIdentifier: docno
-            }
-        ]
-    };
-
-    newCompound.identifiers[ identifierType.toLowerCase() ] = identifier.trim();
-    return newCompound;
-}
