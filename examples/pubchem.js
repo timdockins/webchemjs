@@ -12,7 +12,7 @@ const parseString = require('xml2js').parseString;
 var query = {
     ids : ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","30","31","32","33","34","35"],
     from : "cid",
-    to : "property/InChiKey"
+    to : "SDF",
 };
 
 var ids = [];
@@ -23,7 +23,8 @@ for ( var i = 1; i < 2000; i++ ) {
 var query2 = {
     ids : ids,
     from : "cid",
-    to : "property/InChiKey,canonicalSMILES"
+    to : "property/InChiKey,canonicalSMILES",
+    format : "JSON"
 };
 
 
@@ -49,7 +50,8 @@ PubChem.query(
         query : query2,
         first : false,
         verbose : false,
-        method : 'POST'
+        method : 'POST',
+        format : "JSON"
     },
     function( err, results ) {
         console.log(util.inspect(results,false,null));
